@@ -555,6 +555,10 @@ video {
   margin-bottom: 4%;
 }
 
+.mb-\[5\%\] {
+  margin-bottom: 5%;
+}
+
 .ml-\[25\%\] {
   margin-left: 25%;
 }
@@ -577,6 +581,10 @@ video {
 
 .mt-\[10px\] {
   margin-top: 10px;
+}
+
+.mt-\[15\%\] {
+  margin-top: 15%;
 }
 
 .mt-\[20px\] {
@@ -621,6 +629,18 @@ video {
 
 .ml-32 {
   margin-left: 8rem;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mt-\[2\%\] {
+  margin-top: 2%;
 }
 
 .flex {
@@ -675,12 +695,24 @@ video {
   width: 100%;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
 .w-\[15\%\] {
   width: 15%;
 }
 
+.w-\[150px\] {
+  width: 150px;
+}
+
 .w-\[200px\] {
   width: 200px;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-\[50\%\] {
@@ -782,6 +814,10 @@ video {
   border-radius: 10px;
 }
 
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -817,6 +853,20 @@ video {
   border-color: rgb(214 211 209 / var(--tw-border-opacity));
 }
 
+.border-slate-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(71 85 105 / var(--tw-border-opacity));
+}
+
+.border-slate-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
+}
+
+.border-\[\] {
+  border-color: ;
+}
+
 .bg-\[\#009ADC\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 154 220 / var(--tw-bg-opacity));
@@ -829,6 +879,11 @@ video {
 .bg-\[\#2A4669\] {
   --tw-bg-opacity: 1;
   background-color: rgb(42 70 105 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#477FEA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 127 234 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#E9F1FF\] {
@@ -1012,6 +1067,10 @@ video {
   font-size: 12px;
 }
 
+.text-\[13px\] {
+  font-size: 13px;
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -1063,6 +1122,16 @@ video {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+.text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1300,6 +1369,26 @@ video {
 
   .md\:pt-\[55\%\] {
     padding-top: 55%;
+  }
+
+  .md\:pl-\[7\%\] {
+    padding-left: 7%;
+  }
+
+  .md\:pr-\[7\%\] {
+    padding-right: 7%;
+  }
+
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-start {
+    text-align: start;
   }
 
   .md\:text-\[15px\] {
