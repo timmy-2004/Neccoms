@@ -3,64 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <link href="output.css" rel="stylesheet">
   <link rel="stylesheet" href="lib/swipper.min.css"/>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="test.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class=" bg-[#E9F1FF]">
-    <div class="head bg-[#E9F1FF]">
-        <div id="top" class="z-20 sticky md:pr-[5%]  top md:pt-[1%] pt-[2%] pb-[2%] pl-[2%]  md:pl-[5%] md:pb-[1%] md:flex">
-            <div class="logo md:block flex justify-between">
-                <img class="md:w-[100px] md:h-[50px] w-[15%] h-[15%]" src="img/church_logo-removebg-preview 2.png">
-                <i id="burger" class="text-[20px] text-bold pt-[4%] pr-[20px] ri-menu-line md:hidden flex text-[#009ADC]" onclick="showMenu()"></i>
-            </div>
-                <nav id="navLinks" class="md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:w-full w-[200px] md:h-full h-[100vh] md:ml-[30%] z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
-                    <ul class="mt-[10%]  md:mt-[1%] md:gap-x-8 md:flex md:text-black text-white">
-                        <li class="transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                            <i class="md:hidden flex mr-[5%] ri-home-3-line"></i>
-                            <a href="index.html">Home</a>
-                        </li>
-    
-                        <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                            <i class="md:hidden flex mr-[5%] ri-information-line"></i>
-                            <a href="about.html">About Us</a>
-                        </li>
-    
-                        <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                            <i class="md:hidden flex mr-[5%] ri-book-mark-line"></i>
-                            <a href="">Courses</a>
-                        </li>
-    
-                        <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                            <i class="md:hidden flex mr-[5%] ri-ball-pen-line"></i>
-                            <a href="registration.html">Registration</a>
-                        </li>
-    
-                        <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                            <i class="md:hidden flex mr-[5%] ri-phone-line"></i>
-                            <a href="">Contact Us</a>
-                        </li>
-    
-                        <li class="transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                            <i class="md:hidden flex mr-[5%] ri-user-3-line"></i>
-                            <a href="sponsor.html">Sponsorship</a>
-                        </li>
-                    </ul>
-                </nav>
+    <div id="top" class="z-20 sticky  md:pr-[5%]  top md:pt-[1%] pt-[2%] pb-[2%] pl-[2%]  md:pl-[5%] md:pb-[1%] md:flex">
+        <div class="logo md:block flex justify-between">
+            <img class="md:w-[100px] md:h-[50px] w-[15%] h-[15%]" src="img/church_logo-removebg-preview 2.png">
+            <i id="burger" class="text-[20px] text-bold pt-[4%] pr-[20px] ri-menu-line md:hidden flex text-[#009ADC]" onclick="showMenu()"></i>
         </div>
+            <nav id="navLinks" class="md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:w-full w-[200px] md:h-full h-[100vh] md:ml-[30%] z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
+                <ul class="mt-[10%]  md:mt-[1%] md:gap-x-8 md:flex md:text-black text-white">
+                    <li class="transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <i class="md:hidden flex mr-[5%] ri-home-3-line"></i>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <i class="md:hidden flex mr-[5%] ri-information-line"></i>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <i class="md:hidden flex mr-[5%] ri-book-mark-line"></i>
+                        <a href="">Courses</a>
+                    </li>
+
+                    <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <i class="md:hidden flex mr-[5%] ri-ball-pen-line"></i>
+                        <a href="registration.html">Registration</a>
+                    </li>
+
+                    <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <i class="md:hidden flex mr-[5%] ri-phone-line"></i>
+                        <a href="">Contact Us</a>
+                    </li>
+
+                    <li class="transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <i class="md:hidden flex mr-[5%] ri-user-3-line"></i>
+                        <a href="sponsor.html">Sponsorship</a>
+                    </li>
+                </ul>
+            </nav>
+    </div>
+
+    <div class="head bg-[#E9F1FF]">
 
 
-        <div class="">
+        <div  class="">
         <div class="swiper mySwiper">
             <div  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down"  class="swiper-wrapper">
 
               <div class="md:ml-0 ml-[10%] relative swiper-slide slide_1">
-                <img class="w-[100%] h-[100%]" src="img/Rectangle 6401.png">
-                <div class="w-[100%] h-[100%] text-white absolute bg-black bg-opacity-[70%]">
+                <img class="" src="img/Rectangle 6401.png">
+                <div class="w-[100%] md:h-[100%] h-[100vh] text-white absolute bg-black bg-opacity-[70%]">
                     <h1 class="text-center mt-[23%] md:text-[40px]">WITHIN THE COVER OF THE BIBLE ARE THE ANSWERS FOR ALL <br class="md:flex hidden"> LIFE QUESTIONS</h1>
                     <p class="text-center md:text-[25px]">John 3:16</p>
                 </div>
@@ -108,7 +108,7 @@
         <div class="md:ml-[10%] md:mt-[10%]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
           <h1 class="text-center text-blue-600 font-semibold  md:text-[30px] "  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >ABOUT US</h1>  
           <p class="text-center md:ml-0 md:mr-0 ml-[5%] mr-[5%] font-bold md:mt-[6%]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >We help people to achieve their God ordained purpose <br class="md:flex hidden"> throught the teachings in the scripture.</p>
-          <p class="text-center  md:ml-0 md:mr-0 ml-[5%] mr-[5%] md:mt-[6%]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
+          <p class="  md:ml-0 md:mr-0 ml-[5%] mr-[5%] mt-[6%]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
             We equip ministers and individuals with God's words 
              <br class="md:flex hidden">
             for the work of the ministry who in-turn equip their family, 
@@ -185,7 +185,7 @@
             </div>
         </div>
 
-        <p class="md:pt-[5%] md:pr-[5%] md:pb-[2%] text-[20px] flex justify-end" data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
+        <p class="pt-[7%] md:pt-[5%] md:pr-[5%] pb-[4%] md:pb-[2%] md:text-[20px] flex justify-end" data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
             View More
             <i class="ri-play-fill"></i>
         </p>
@@ -247,9 +247,9 @@
         </div>
 
         <div class="links pt-[8%] ">
-            <h2 class="font-semibold text-[20px] md:text-start text-center mb-[5%]">NECCOMS</h2> 
+            <h2 class="font-semibold text-[20px] md:text-start md:ml-0 ml-[10%] mb-[5%]">NECCOMS</h2> 
             <div class="links  md:flex ">
-                <ul class="ml-[35%] text-slate-100 ">
+                <ul class="md:ml-0 ml-[10%] text-slate-100 ">
                     <li class="">
                         <a href="">Home</a>
                     </li>
