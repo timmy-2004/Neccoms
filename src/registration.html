@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body class=" bg-sky-50 ">
     <div id="top" class="z-20 sticky  md:pr-[5%]  top md:pt-[1%] pt-[2%] pb-[2%] pl-[2%]  md:pl-[5%] md:pb-[1%] md:flex">
@@ -51,10 +52,22 @@
     </div>
     <div class="registration pt-[5%]  md:pl-[7%] md:pr-[7%] ">
         <h1 class="pt-[3%] text-[30px] md:text-start text-center font-bold text-white md:text-[#477FEA]  md:border-none  rounded-b-xl md:bg-inherit bg-[#009ADC]">REGISTRATION</h1>
-       <div class="">
-        <form class=" md:pl-0 md:pr-0  pl-[7%] pr-[7%] font-semibold md:text-[20px] pt-[3%] grid md:grid-cols-2 gap-x-[8%] gap-y-[2%] md:gap-y-[3%] text-[#33333366]" action="registration">
+       <div class=" pb-[10%] ">
+        <form class=" md:pl-0 md:pr-0 pl-[7%] pr-[7%] font-semibold md:text-[20px] pt-[3%] grid md:grid-cols-2 gap-x-[8%] gap-y-[2%] md:gap-y-[3%] text-[#33333366]" action="registration">
             <div data-aos="fade-up-right"  data-aos-duration="1000" class= " md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
                 <label class="text-black" for="">Full Name</label>
+                <br>
+                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Oyo">
+            </div>
+
+            <div data-aos="fade-up-right"  data-aos-duration="1000" class= " md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                <label class="text-black" for="">Email</label>
+                <br>
+                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="email" placeholder="Oyo">
+            </div>
+
+            <div data-aos="fade-up-right"  data-aos-duration="1000" class= " md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                <label class="text-black" for="">Phone Number</label>
                 <br>
                 <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Oyo">
             </div>
@@ -75,6 +88,12 @@
                 <label class="text-black" for="">Place of birth</label>
                 <br>
                 <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Ibadan">
+            </div>
+
+            <div data-aos="fade-up-right"  data-aos-duration="1000" class= " md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                <label class="text-black" for="">Sex</label>
+                <br>
+                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Oyo">
             </div>
 
             <div data-aos="fade-up-right"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
@@ -137,12 +156,13 @@
                 <br>
             </div>
             <br>
-            <button class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg text-center text-white bg-[#009ADC]">Register</button>
         </form>
        </div>
+       <button class="mt-[80%] md:ml-0 md:mr-0 ml-[5%] mr-[5%] md:mt-[2%]  w-[90%] mb-[8%]  md:w-[46%] py-[2%] rounded-lg text-center text-white bg-[#009ADC] ">Register</button>
     </div>
     <script>
         AOS.init();
   </script>
+  <script src="index.js"></script>
 </body>
 </html>
