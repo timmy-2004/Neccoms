@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.active-class {
+  @apply  border-[#2A4669]
+}

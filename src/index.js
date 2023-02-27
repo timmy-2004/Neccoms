@@ -10,3 +10,12 @@ var navLinks = document.getElementById("navLinks");
         navLinks.style.right ="-200px"
       }
     }
+
+
+  // function opentab() {
+  //   for(tablink of tablinks) {
+  //     tablink.classList.remove('active-class'); 
+  // }
+
+  // event.currentTarget.classList.add('active-class');
+  // }
