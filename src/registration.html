@@ -11,35 +11,52 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body class=" bg-sky-50 ">
-    <div id="top" class="z-20 sticky  md:pr-[5%]  top md:pt-[1%] pt-[2%] pb-[2%] pl-[2%]  md:pl-[5%] md:pb-[1%] md:flex">
-        <div class="logo md:block flex justify-between">
-            <img class="md:w-[100px] md:h-[50px] w-[15%] h-[15%]" src="img/church_logo-removebg-preview 2.png">
-            <i id="burger" class="text-[20px] text-bold pt-[4%] pr-[20px] ri-menu-line md:hidden flex text-[#009ADC]" onclick="showMenu()"></i>
+    <div class="z-20  top sticky  py-3 items-center" id="top">
+        <div  class="w-[90%] mx-auto">
+            <div class="md:flex justify-between w-full">
+                <div class="logo md:block flex items-center justify-between ">
+                    <img class="h-[60px] " src="img/church_logo-removebg-preview 2.png">
+                    <i id="burger" class="text-[20px] text-bold pt-[4%] pr-[20px] ri-menu-line md:hidden flex text-[#2A4669]" onclick="showMenu()"></i>
+                </div>
+                <nav  class="">
+                    <ul  id="navLinks" class=" md:mt-[1%] md:gap-x-8 md:flex md:text-black text-white md:w-full w-[200px] md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:h-full h-[100vh]  z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex  ri-home-3-line"></i>
+                            <a onclick="opentab()"  href="index.html" >Home</a>
+                        </li>
+    
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" >
+                            <i class=" md:hidden flex  ri-information-line"></i>
+                            <a onclick="opentab()"  class="tabLinks " href="#aboutUs">About Us</a>
+                        </li>
+    
+                        <li class="flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-book-mark-line"></i>
+                            <a onclick="opentab()"   href="">Courses</a>
+                        </li>
+    
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-ball-pen-line"></i>
+                            <a onclick="opentab()"  href="registration.html">Registration</a>
+                        </li>
+    
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-phone-line"></i>
+                            <a onclick="opentab()"   href="#contactUs">Contact Us</a>
+                        </li>
+    
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex  ri-user-3-line"></i>
+                            <a onclick="opentab()"  href="sponsorship.html">Sponsorship</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+                
         </div>
-            <nav id="navLinks" class="md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:w-full w-[200px] md:h-full h-[100vh] md:ml-[30%] z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
-                <ul class="mt-[10%]  md:mt-[1%] md:gap-x-8 md:flex md:text-black text-white">
-                    <li class="transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                        <i class="md:hidden flex mr-[5%] ri-home-3-line"></i>
-                        <a href="index.html">Home</a>
-                    </li>
-
-                    <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                        <i class="md:hidden flex mr-[5%] ri-book-mark-line"></i>
-                        <a href="">Courses</a>
-                    </li>
-
-                    <li class=" transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                        <i class="md:hidden flex mr-[5%] ri-ball-pen-line"></i>
-                        <a href="registration.html">Registration</a>
-                    </li>
-
-                    <li class="transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#009ADC] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
-                        <i class="md:hidden flex mr-[5%] ri-user-3-line"></i>
-                        <a href="sponsor.html">Sponsorship</a>
-                    </li>
-                </ul>
-            </nav>
     </div>
+
+
     <div class="registration pt-[5%]  md:pl-[7%] md:pr-[7%] ">
         <h1 class="pt-[3%] text-[30px] md:text-start text-center font-bold text-white md:text-[#477FEA]  md:border-none  rounded-b-xl md:bg-inherit bg-[#009ADC]">REGISTRATION</h1>
        <div class=" pb-[10%] ">
@@ -137,6 +154,14 @@
                 <br>
             </div>
 
+            <div class="flex   pt-[30px] ">
+                <label for="dropzone-file" class="flex flex-col justify-center items-center w-full h-60   bg-[#F86D6233]  bg-white rounded-lg border-2 border-gray-300 border-dashed cursor-pointer">
+                    <div class="flex flex-col justify-center items-center pt-5 pb-6">
+                        <p class="mb-2 text-md text-black dark:text-gray-400" >Drag and drop file here or <span class="font-semibold text-[#009ADC]">Browse</span></p>
+                    </div>
+                    <input id="dropzone-file" type="file" class="hidden">
+                </label>
+            </div> 
             <div data-aos="fade-up-left"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
                 <label class="text-black" for="">Are you a member of new creation gospel mission?</label>
                 <br>
@@ -145,9 +170,14 @@
                     <option value="no">NO</option>
                 </select>
             </div>
+            
             <br>
+            <button class="md:ml-0 md:mr-0 ml-[5%] mr-[5%]  w-[90%]  md:w-[100%] mb-[1000px] md:mb-[400px] py-[2%] rounded-lg text-center font-semibold text-[18px] text-white bg-[#009ADC] ">Register</button>
+
         </form>
-        <button class="mt-[140%] md:ml-0 md:mr-0 ml-[5%] mr-[5%] md:mt-[20%]  w-[90%] mb-[8%]  md:w-[46%] py-[2%] rounded-lg text-center font-semibold text-[18px] text-white bg-[#009ADC] ">Register</button>
+        
+
+
        </div>
     </div>
     <script>

@@ -10,51 +10,54 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body class=" bg-[#E9F1FF]">
-    <div id="top" class="z-20 sticky md:pr-[5%]  top md:pt-[1%] pt-[2%] pb-[2%] pl-[2%]  md:pb-[1%] ">
-        <div class="md:flex justify-between w-full">
-            <div class="logo md:block flex justify-between ">
-                <img class="h-[60px] " src="img/church_logo-removebg-preview 2.png">
-                <i id="burger" class="text-[20px] text-bold pt-[4%] pr-[20px] ri-menu-line md:hidden flex text-[#2A4669]" onclick="showMenu()"></i>
+<body class=" bg-[#F3F7FE]">
+    <div class="z-20  top sticky  py-3 items-center" id="top">
+        <div  class="w-[90%] mx-auto">
+            <div class="md:flex justify-between w-full">
+                <div class="logo md:block flex items-center justify-between ">
+                    <img class="h-[60px] " src="img/church_logo-removebg-preview 2.png">
+                    <i id="burger" class="text-[20px] text-bold pt-[4%] pr-[20px] ri-menu-line md:hidden flex text-[#2A4669]" onclick="showMenu()"></i>
+                </div>
+                <nav  class="">
+                    <ul  id="navLinks" class=" md:mt-[1%] md:gap-x-8 md:flex md:text-black text-white md:w-full w-[200px] md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:h-full h-[100vh]  z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex  ri-home-3-line"></i>
+                            <a onclick="opentab()"  href="index.html" >Home</a>
+                        </li>
+    
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" >
+                            <i class=" md:hidden flex  ri-information-line"></i>
+                            <a onclick="opentab()"  class="tabLinks " href="#aboutUs">About Us</a>
+                        </li>
+    
+                        <li class="flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-book-mark-line"></i>
+                            <a onclick="opentab()"   href="#Courses">Courses</a>
+                        </li>
+    
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-ball-pen-line"></i>
+                            <a onclick="opentab()"  href="registration.html">Registration</a>
+                        </li>
+    
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-phone-line"></i>
+                            <a onclick="opentab()"   href="#contactUs">Contact Us</a>
+                        </li>
+    
+                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex  ri-user-3-line"></i>
+                            <a onclick="opentab()"  href="sponsorship.html">Sponsorship</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav  class="  ">
-                <ul  id="navLinks" class=" md:mt-[1%] md:gap-x-8 md:flex md:text-black text-white md:w-full w-[200px] md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:h-full h-[100vh]  z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
-                    <li class=" flex items-center justify-center">
-                        <i class="md:hidden flex mr-[5%] ri-home-3-line"></i>
-                        <a onclick="opentab()"  href="index.html" class="tabLinks active-class transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF]  border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">Home</a>
-                    </li>
-
-                    <li class=" flex items-center justify-center" >
-                        <i class=" md:hidden flex mr-[5%] ri-information-line"></i>
-                        <a onclick="opentab()"  class="tabLinks transition-all duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" href="#aboutUs">About Us</a>
-                    </li>
-
-                    <li class="flex items-center justify-center">
-                        <i class="md:hidden flex mr-[5%] ri-book-mark-line"></i>
-                        <a onclick="opentab()"  class="tabLinks transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" href="">Courses</a>
-                    </li>
-
-                    <li class=" flex items-center justify-center">
-                        <i class="md:hidden flex mr-[5%] ri-ball-pen-line"></i>
-                        <a onclick="opentab()"  class="tabLinks transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" href="registration.html">Registration</a>
-                    </li>
-
-                    <li class=" flex items-center justify-center">
-                        <i class="md:hidden flex mr-[5%] ri-phone-line"></i>
-                        <a onclick="opentab()"  class="tabLinks  transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" href="#contactUs">Contact Us</a>
-                    </li>
-
-                    <li class=" flex items-center justify-center">
-                        <i class="md:hidden flex mr-[5%] ri-user-3-line"></i>
-                        <a onclick="opentab()"  class="tabLinks  transition-all  duration-300 ease-in-out delay-300  md:pl-0 pl-[8%] md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" href="sponsorship.html">Sponsorship</a>
-                    </li>
-                </ul>
-            </nav>
+                
         </div>
-            
     </div>
+    
 
-    <div class="head bg-[#E9F1FF]">
+    <div class="head bg-[#F3F7FE]">
 
 
         <div  class="">
@@ -107,29 +110,34 @@
           </div>
         </div>
     </div>
-    <div id="aboutUs"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down"  style="background-image: url('img/vector4.png'); background-repeat: no-repeat;" class="mt-[5%] justify-between  about-us sm:block md:flex">
-        <div class="sm:ml-[5%] md:ml-[10%] sm:mt-[5%] md:mt-[10%]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
-          <h1 class="text-center text-blue-600 font-semibold  md:text-[30px] "  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >ABOUT US</h1>  
-          <p class="text-center md:ml-0 md:mr-0 ml-[5%] mr-[5%] font-bold md:mt-[6%]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >We help people to achieve their God ordained purpose <br class="md:flex hidden"> throught the teachings in the scripture.</p>
-          <p class="  md:ml-0 md:mr-0 sm:ml-0 ml-[5%] mr-[5%] mt-[6%]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
-            We equip ministers and individuals with God's words 
-             <br class="md:flex hidden sm:hidden">
-            for the work of the ministry who in-turn equip their family, 
-             <br class="md:flex hidden sm:hidden">
-             churches and community to live to the fullest their 
-             <br class="md:flex hidden sm:hidden">
-             God giving potential and makes the world a
-             <br class="md:flex hidden sm:hidden">
-              better place.
-         </p>
+    <div id="aboutUs"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down"  style="background-image: url('img/vector4.png'); background-position: top left; background-repeat: no-repeat;" >
+        <div class ="mt-[5%]  about-us  md:flex  justify-between gap-6 mx-auto">
+            <div class="  w-[80%] md:w-1/3 mx-auto text-[#333333E5]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
+                <h1 class="text-center text-blue-600 font-semibold md:pt-20 pt-5 md:text-[30px] text-2xl leading-loose "  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >ABOUT US</h1>  
+                <p class="text-center  font-bold md:mt-[6%]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >We help people to achieve their God ordained purpose <br class="md:flex hidden"> throught the teachings in the scripture.</p>
+                <p class="  text-center mt-[6%]"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
+                  We equip ministers and individuals with God's words 
+                   <br class="md:flex hidden sm:hidden">
+      
+      
+                  for the work of the ministry who in-turn equip their family, 
+                   <!-- <br class="md:flex hidden sm:hidden"> -->
+                   churches and community to live to the fullest their 
+                   <!-- <br class="md:flex hidden sm:hidden"> -->
+                   God giving potential and makes the world a
+                   <!-- <br class="md:flex hidden sm:hidden"> -->
+                    better place.
+               </p>
+            </div>
+      
+              <div class="" data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
+                  <img class="mb-[10%] " src="img/readbible 1.png" alt="">
+              </div>
         </div>
-
-        <div  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
-            <img class="mb-[10%]" src="img/readbible 1.png" alt="">
-        </div>
+        
     </div>
 
-    <div id="Courses" class="courses" data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
+    <div id="Courses" class="courses " data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
         <h1 class="text-center text-blue-600 font-bold text-[25px] md:text-[40px] ">COURSES</h1>
         
         <div class=" md:mt-[5%] mt-[5%] grid  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 w-[90%] mx-auto"  data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
@@ -181,7 +189,7 @@
         </div>
         
 
-        <p class="pt-[7%] md:pt-[5%] md:pr-[5%] pb-[4%] md:pb-[2%] md:text-[20px] flex justify-end" data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
+        <p class="pt-[7%] md:pt-[5%] md:pr-[5%] pb-[4%] md:pb-[2%] md:text-[16px] font-bold text-[#333333E5] flex justify-end" data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
             View More
             <i class="mt-[2px] ri-play-fill"></i>
         </p>
@@ -193,7 +201,7 @@
             </div>
         </div>
     </div>
-    <div id="contactUs" class=" justify-between md:pb-[10%] pb-[10%] bg-[#F3F7FE] pr-[5%] md:pb-[10%] pl-[5%] md:pl-[5%] pt-[8%] formField md:flex " data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
+    <div id="contactUs" class="text-[#333333E5]  justify-between md:pb-[10%] pb-[10%] bg-[#F3F7FE] pr-[5%] md:pb-[10%] pl-[5%] md:pl-[5%] pt-[8%] formField md:flex " data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" >
         <div data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" class="md:pl-[3%]">
             <h1 data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" class=" md:pl-[15%] md:text-[35px] font-bold md:mx-0 md:text-start text-center text-[#477FEA]">Contact Us</h1>
             <hr data-aos="fade-up"  data-aos-duration="1000" data-aos="fade-down" class="h-[2px] md:hidden bg-[#009ADC]">
@@ -235,23 +243,23 @@
 
     <div class="footer text-white  justify-around bg-[#2A4669] pb-[4%] ">
 
-       <div class=" ml-[10%] pt-[4%] mr-[10%] grid md:grid-cols-10 gap-x-8">
+       <div class=" w-[80%] mx-auto grid md:grid-cols-4 py-10">
 
-        <div class="span-col-2 logo pl-[30%] md:pl-[5%] pt-[8%] ">
+        <div class=" logo  ">
             <img class=" w-[100px]" src="img/church_logo-removebg-preview 2.png">
-            <div class="justify-around w-[150px] flex text-[25px] mt-[15%]">
+            <div class="gap-x-2 flex text-[25px] mt-6">
                 <a href=""><i class="ri-facebook-circle-fill"></i></a>
-                <a href=""><i class="rounded-[50px] p-[4px] text-[13px] text-[#2A4669] bg-white ri-twitter-fill"></i></a>
+                <a href=""><i class="rounded-[50px] text-[#2A4669] bg-white ri-twitter-fill"></i></a>
                 <a href=""><i class=" ri-whatsapp-fill"></i></a>
                 <a href=""><i class=" ri-instagram-fill"></i></a>
             </div>
         </div>
 
 
-        <div class="span-col-1 links pt-[8%] ">
-            <h2 class="font-semibold text-[20px] md:text-start md:ml-0 ml-[10%] mb-[5%]">NECCOMS</h2> 
+        <div class=" links ">
+            <h2 class="font-semibold text-[20px] md:text-start  mb-[5%]">NECCOMS</h2> 
             <div class="links  md:flex ">
-                <ul class="md:ml-0 ml-[10%] text-slate-100 ">
+                <ul class=" text-slate-100 ">
                     <li class="">
                         <a href="">Home</a>
                     </li>
@@ -272,20 +280,23 @@
                     </li>
                 </ul>
 
-                <hr class="md:hidden mb-[10%] mt-[10%] flex text-[#009ADC] border-2 border-[#009ADC]">
+                <hr class="md:hidden mb-[3%] mt-[3%] flex text-[#009ADC] border-2 border-[#009ADC]">
             </div>       
         </div>
 
-        <div class="span-col-4 email md:mt-[10%] md:ml-[10%]">
-            <p class="md:text-start text-center">Subscribe to our News Letter</p>
-            <input class="md:ml-0 ml-[6%] mt-[5%] w-[400px] text-slate-500 bg-[#E9F1FF] p-2  rounded-lg" type="email" placeholder="Enter your email">
-            <button class="md:ml-0 ml-[6%]  px-[11%] py-[2%] mt-[3%] rounded-lg bg-[#477FEA]">Submit</button>
+        <div class=" ">
+            <form action="">
+            <label class="">Subscribe to our News Letter</label>
+            <input class=" mt-[5%] md:w-[300px] w-full text-slate-500 bg-[#E9F1FF] p-2  rounded-lg" type="email" placeholder="Enter your email">
+            <button class="  px-[11%] py-[2%] mt-[3%] rounded-lg bg-[#477FEA]">Submit</button>
+            </form>
+            
         </div>
 
-        <hr class="md:hidden mt-[10%] flex text-[#009ADC] border-2 border-[#009ADC]">
+        <hr class="md:hidden mt-[3%] flex text-[#009ADC] border-2 border-[#009ADC]">
 
-        <div class="span-col-2 contacts md:ml-0 ml-[6%] pt-[8%]">
-            <h2 class="font-semibold text-[20px] md:text-start text-center mb-[10%]">Contacts</h2>
+        <div class=" contacts">
+            <h2 class="font-semibold text-[20px]  mb-[10%]">Contacts</h2>
             <div class="flex">
                 <i class="mr-[5%] ri-mail-line"></i>
                 <p>admin@neccoms.com</p>
@@ -301,7 +312,11 @@
         </div>
        </div>
 
-        <hr class=" mt-[10%] text-[#009ADC]  border-2 border-[#009ADC]">
+        <hr class=" mt-[10%] w-[85%] mx-auto text-[#fff] border">
+        <div class="flex justify-between w-[85%] mx-auto mt-[2%]">
+            <p class="" >Copyright2023</p>
+            <p>All rights reserved</p>
+        </div>
     </div>
 
 
