@@ -1,0 +1,1 @@
+{"version":3,"sources":["input.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"output.css","sourceRoot":"..\\src","sourcesContent":["@tailwind base;\r\n@tailwind components;\r\n@tailwind utilities;\r\n\r\n.active-class {\r\n  @apply  border-[#2A4669]\r\n}\r\n"]}
