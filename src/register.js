@@ -22,6 +22,35 @@ form.addEventListener('submit', async event => {
  const condtype = document.querySelector('#condtype').value; 
  const testimony = document.querySelector('#testimony').value; 
  const mem = document.querySelector('#mem').value; 
+ const images = document.querySelector('#profile'); 
+
+ images.addEventListener('change', (event) => {
+  const image = event.target.files[0];
+
+  const reader = new FileReader();
+
+  reader.readAsDataURL(image);
+
+  reader.addEventListener('load', () => {
+      localStorage.setItem('image', reader.result);
+  });
+});
+     const userImage = async () =>{
+      const postImage = await fetch('http://localhost:3005/api/file/upload-images',{
+        method: 'POST',
+        body: JSON.stringify(localStorage.getItem('image'))
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+            //  do stuff with data
+           }) 
+     }
+
+  await userImage()
+
+  // const Image =localStorage.setItem('images')
+
  
  const userAction = async () => {
     const response = await fetch(`${BASE_URL}/register`,  {
@@ -42,7 +71,8 @@ form.addEventListener('submit', async event => {
         healthIssue:cond,
         typeOfHealthIssue:condtype,
         testimony : testimony,
-        member :mem
+        member :mem,
+        img : userImage()
       }), // string or object
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
@@ -53,7 +83,7 @@ form.addEventListener('submit', async event => {
   }
   
 
-   await userAction();
+    userAction();
 //   register();
   form.reset();
 });
