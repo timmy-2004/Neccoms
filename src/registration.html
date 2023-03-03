@@ -64,38 +64,38 @@
            
         <form>
            
-            <div class="grid grid-cols-2 mt-8  gap-x-20 gap-y-5">
+            <div class="grid md:grid-cols-2 mt-8  gap-x-20 gap-y-5">
                 <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Full Name</label>
-                    <input id="fullName" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Ajayi David">
+                    <input id="fullName" required class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Ajayi David">
                 </div>
                 <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Email</label>
-                    <input id="email" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="email" placeholder="Ajayi@gmail.com">
+                    <input id="email" required class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="email" placeholder="Ajayi@gmail.com">
                 </div>
                 <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Phone Number</label>
-                    <input id="phoneNumber" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  type="number" placeholder="07039287546">
+                    <input id="phoneNumber" minlength="11" maxlength="16" required class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  type="number" placeholder="07039287546">
                 </div>
     
                 <div data-aos="fade-up-left"  data-aos-duration="1000"  class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm"  for="">State of Origin</label>
-                    <input id="origin" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Oyo">
+                    <input id="origin" required class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Oyo">
                 </div>
     
                 <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm"  for="">Date of Birth</label>
-                    <input id="dob" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  type="date" placeholder="09-02-2002">
+                    <input id="dob" required class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  type="date" placeholder="09-02-2002">
                 </div>
     
                 <div data-aos="fade-up-left"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Place of birth</label>
-                    <input id="pob"  class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Ibadan">
+                    <input id="pob" required  class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Ibadan">
                 </div>
     
                 <div data-aos="fade-up-right"  data-aos-duration="1000"  class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Marital Status</label>
-                    <input id="maritalStatus"  class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Married">
+                    <input id="maritalStatus" required  class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Married">
                 </div>
     
                 <div data-aos="fade-up-left"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
@@ -110,17 +110,17 @@
     
                 <div data-aos="fade-up-left"  data-aos-duration="1000"  class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Language spoken</label>
-                    <input id="langSpoken" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="English">
+                    <input id="langSpoken" required class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="English">
                 </div>
     
                 <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Language Written</label>
-                    <input id="langWritten" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  type="text" placeholder="English">
+                    <input id="langWritten" required class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  type="text" placeholder="English">
                 </div>
                 
                 <div data-aos="fade-up-left"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Are you a member of new creation gospel mission?</label>
-                    <select  name="member" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" id="mem">
+                    <select  required name="member" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" id="mem">
                         <option >Select an option</option>
                         <option value="no">NO</option>
                         <option value="yes">YES</option>
@@ -129,7 +129,7 @@
     
                 <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Do you have any health issues?</label>
-                    <select  name="member" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" id="cond">
+                    <select required  name="member" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" id="cond">
                         <option >Select an option</option>
                         <option value="no">NO</option>
                         <option value="yes">YES</option>
@@ -138,12 +138,12 @@
     
                 <div data-aos="fade-up-left"  data-aos-duration="1000"  class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">If yes, please state your condition below</label>
-                    <input id="condtype" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="">
+                    <input  id="condtype" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="">
                 </div>
     
                 <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
                     <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Brief testimony of how you became born again</label>
-                    <textarea id="testimony" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  name="" id="" cols="30" rows="7"></textarea>
+                    <textarea  id="testimony" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  name="" id="" cols="30" rows="7"></textarea>
                 </div>
                 <div class="flex  w-full mt-6 ">
                     <label for="profile" class="flex flex-col w-full h-48 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50  hover:bg-gray-100 ">
@@ -152,7 +152,7 @@
                             <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
                             <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                         </div>
-                        <input id="profile" type="file" class="hidden" />
+                        <input required id="profile" type="file" class="hidden" />
                     </label>
                 </div> 
                 <button  class="md:ml-0 md:mr-0 ml-[5%] mr-[5%]  w-[90%]  md:w-[100%] mb-[1000px] md:mb-[400px] py-[2%] rounded-lg text-center font-semibold text-[18px] text-white bg-[#009ADC] ">Register</button>              

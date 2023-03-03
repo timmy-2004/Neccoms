@@ -91,6 +91,9 @@ const userUpload = async () => {
     })
     // console.log(body)
     .then(response => {
+   
+
+
       alert("You have been reistered successfully")
       // msg.innerHTML = "Y successfully"
      setTimeout(function(){
