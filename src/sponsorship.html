@@ -21,22 +21,35 @@
                     <i id="burger" class="text-[20px] text-bold pt-[4%] pr-[20px] ri-menu-line md:hidden flex text-[#2A4669]" onclick="showMenu()"></i>
                 </div>
                 <nav  class="">
-                    <ul  id="navLinks" class=" md:mt-[1%] md:gap-x-8 md:flex md:text-black text-white md:w-full w-[200px] md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:h-full h-[100vh]  z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                    <ul  id="navLinks" class=" md:mt-[1%] mt-3 md:gap-x-8 md:flex md:text-black text-white md:w-full w-[200px] md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:h-full h-[100vh]  z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
+                        <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0  md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex  ri-home-3-line"></i>
-                            <a onclick="opentab()"  href="index.html" >Home</a>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  href="index.html" >Home</a>
                         </li>
     
+                        <!-- <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0   border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" >
+                            <i class=" md:hidden flex  ri-information-line"></i>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  class="tabLinks " href="#aboutUs">About Us</a>
+                        </li> -->
     
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <!-- <li class="flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0  md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-book-mark-line"></i>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"   href="#Courses">Courses</a>
+                        </li> -->
+    
+                        <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0 md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex ri-ball-pen-line"></i>
-                            <a onclick="opentab()"  href="registration.html">Registration</a>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  href="registration.html">Registration</a>
                         </li>
     
+                        <!-- <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-phone-line"></i>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"   href="#contactUs">Contact Us</a>
+                        </li> -->
     
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex  ri-user-3-line"></i>
-                            <a onclick="opentab()"  href="sponsorship.html">Sponsorship</a>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  href="sponsorship.html">Sponsorship</a>
                         </li>
                     </ul>
                 </nav>
