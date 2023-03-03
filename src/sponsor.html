@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -22,35 +23,35 @@
                     <i id="burger" class="text-[20px] text-bold pt-[4%] pr-[20px] ri-menu-line md:hidden flex text-[#2A4669]" onclick="showMenu()"></i>
                 </div>
                 <nav  class="">
-                    <ul  id="navLinks" class=" md:mt-[1%] md:gap-x-8 md:flex md:text-black text-white md:w-full w-[200px] md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:h-full h-[100vh]  z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                    <ul  id="navLinks" class=" md:mt-[1%] mt-3 md:gap-x-8 md:flex md:text-black text-white md:w-full w-[200px] md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:h-full h-[100vh]  z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
+                        <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0  md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex  ri-home-3-line"></i>
-                            <a onclick="opentab()"  href="index.html" >Home</a>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  href="index.html" >Home</a>
                         </li>
     
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" >
+                        <!-- <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0   border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" >
                             <i class=" md:hidden flex  ri-information-line"></i>
-                            <a onclick="opentab()"  class="tabLinks " href="#aboutUs">About Us</a>
-                        </li>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  class="tabLinks " href="#aboutUs">About Us</a>
+                        </li> -->
     
-                        <li class="flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <!-- <li class="flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0  md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex ri-book-mark-line"></i>
-                            <a onclick="opentab()"   href="">Courses</a>
-                        </li>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"   href="#Courses">Courses</a>
+                        </li> -->
     
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0 md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex ri-ball-pen-line"></i>
-                            <a onclick="opentab()"  href="registration.html">Registration</a>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  href="registration.html">Registration</a>
                         </li>
     
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <!-- <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex ri-phone-line"></i>
-                            <a onclick="opentab()"   href="#contactUs">Contact Us</a>
-                        </li>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"   href="#contactUs">Contact Us</a>
+                        </li> -->
     
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex  ri-user-3-line"></i>
-                            <a onclick="opentab()"  href="sponsorship.html">Sponsorship</a>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  href="sponsorship.html">Sponsorship</a>
                         </li>
                     </ul>
                 </nav>
@@ -58,28 +59,32 @@
                 
         </div>
     </div>
-    <div style="background-image: url(img/pexels-pavel-danilyuk-7942441\ 1.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;">
-        <div class="bg-black bg-opacity-70">
-        <h1 class="md:py-6 p-3  md:pl-20 font-bold text-[#ffffff] text-xl  md:text-4xl md:tracking-wider">Sponsorship</h1>
+    <div class="pt-[5%]  pb-10">
+        <div class="" style="background-image: url(img/pexels-pavel-danilyuk-7942441\ 1.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;">
+            <div class="bg-black bg-opacity-70">
+            <h1 class="md:py-6 p-3  md:pl-20 font-bold text-[#ffffff] text-xl  md:text-4xl md:tracking-wider">Sponsorship</h1>
+            </div>
+        </div>
+        <div class=" space-y-4 w-[90%] mx-auto mt-10 flex flex-col justify-evenly">
+            <h3 class="font-bold text-lg pb-2">CALL FOR SPONSORSHIP</h3>
+            <p class="text-sm md:text-lg leading-loose ">NECCOMS hereby invites you to partner with us on our “SUPPORT A MISSIONARY” PROJECT. New Creation College of Ministry and Seminary (NECCOMS) run a four(4)semester resident school program leading to the award of a Diploma in Theology and Pastoral Ministry with each semester running for a period of sixteen(16) weeks.</p>
+            <p class="text-sm md:text-lg leading-loose">The “Sponsor a Missionary” project is an opportunity for individuals, corporate bodies, and gospel outreaches to partake in the joy of evangelizing the nation by directly sponsoring an individual seminarian selected through the student profile on our website or by Incognito sponsorship wherein the school is obliged to assign a beneficiary to a sponsor.
+            </p>
+            <p class="text-sm md:text-lg leading-loose">Sponsors will also have the privilege to interact with their beneficiaries (whether selected or assigned) and will get regular notification on their progress in school till graduation. Sponsors can pay monthly (₦40,000) or per semester (₦160,000). Payment can also be made generously as the Spirit leads.</p>
+            <h4 class="font-bold text-sm leading-loose">SPONSORSHIP CATEGORY</h4>
+            <p class="text-sm md:text-lg leading-loose">₦40,000 monthly per student <br> ₦160,000 every semester per student</p>
+            <h4  class="font-bold text-sm">TO SPONSOR</h4>
+            <P class="text-sm md:text-lg leading-loose">AstraPolaris Microfinance Bank <br>
+                Account Number: 0801193839
+            </P>
+            <p class="text-sm md:text-lg leading-loose">Please indicate the name (s) of the beneficiary (ies) on the payment narration and send the payment receipt to the following number on WhatsApp – 08030794937</p>
+            <h4  class="font-bold text-sm ">LOCATION</h4>
+            <p class="text-sm md:text-lg leading-loose">New Creation College of Mission and Seminary (NECCOMS) is situated at Ogunmakin village, Ogun State, on the border with Ibadan, Oyo State. The community is barely 5 minutes’ drive off the Lagos-Ibadan Expressway and 25 minutes’ drive to Ibadan tollgate.</p>
+    
         </div>
     </div>
-    <div class=" space-y-4 w-[90%] mx-auto mt-10 flex flex-col justify-evenly">
-        <h3 class="font-bold text-lg pb-2">CALL FOR SPONSORSHIP</h3>
-        <p class="text-sm md:text-lg leading-loose ">NECCOMS hereby invites you to partner with us on our “SUPPORT A MISSIONARY” PROJECT. New Creation College of Ministry and Seminary (NECCOMS) run a four(4)semester resident school program leading to the award of a Diploma in Theology and Pastoral Ministry with each semester running for a period of sixteen(16) weeks.</p>
-        <p class="text-sm md:text-lg leading-loose">The “Sponsor a Missionary” project is an opportunity for individuals, corporate bodies, and gospel outreaches to partake in the joy of evangelizing the nation by directly sponsoring an individual seminarian selected through the student profile on our website or by Incognito sponsorship wherein the school is obliged to assign a beneficiary to a sponsor.
-        </p>
-        <p class="text-sm md:text-lg leading-loose">Sponsors will also have the privilege to interact with their beneficiaries (whether selected or assigned) and will get regular notification on their progress in school till graduation. Sponsors can pay monthly (₦40,000) or per semester (₦160,000). Payment can also be made generously as the Spirit leads.</p>
-        <h4 class="font-bold text-sm leading-loose">SPONSORSHIP CATEGORY</h4>
-        <p class="text-sm md:text-lg leading-loose">₦40,000 monthly per student <br> ₦160,000 every semester per student</p>
-        <h4  class="font-bold text-sm">TO SPONSOR</h4>
-        <P class="text-sm md:text-lg leading-loose">AstraPolaris Microfinance Bank <br>
-            Account Number: 0801193839
-        </P>
-        <p class="text-sm md:text-lg leading-loose">Please indicate the name (s) of the beneficiary (ies) on the payment narration and send the payment receipt to the following number on WhatsApp – 08030794937</p>
-        <h4  class="font-bold text-sm ">LOCATION</h4>
-        <p class="text-sm md:text-lg leading-loose">New Creation College of Mission and Seminary (NECCOMS) is situated at Ogunmakin village, Ogun State, on the border with Ibadan, Oyo State. The community is barely 5 minutes’ drive off the Lagos-Ibadan Expressway and 25 minutes’ drive to Ibadan tollgate.</p>
-
-    </div>
+    
+    
     <script>
         AOS.init();
   </script>

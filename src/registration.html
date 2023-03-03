@@ -8,34 +8,49 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-<body class=" bg-sky-50 ">
+<body class=" bg-sky-50 " style="font-family: 'poppins' sans-serif;">
     <div class="z-20  top sticky  py-3 items-center" id="top">
-        <div  class="w-[90%] mx-auto    ">
+        <div  class="w-[90%] mx-auto">
             <div class="md:flex justify-between w-full">
-                <div class="logo md:block flex items-center justify-between ">
+                <div class="logo flex items-center justify-between ">
                     <img class="h-[60px] " src="img/church_logo-removebg-preview 2.png">
                     <i id="burger" class="text-[20px] text-bold pt-[4%] pr-[20px] ri-menu-line md:hidden flex text-[#2A4669]" onclick="showMenu()"></i>
                 </div>
                 <nav  class="">
-                    <ul  id="navLinks" class=" md:mt-[1%] md:gap-x-8 md:flex md:text-black text-white md:w-full w-[200px] md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:h-full h-[100vh]  z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                    <ul  id="navLinks" class=" md:mt-[1%] mt-3 md:gap-x-8 md:flex md:text-black text-white md:w-full w-[200px] md:right-0 right-[-200px] md:bg-inherit bg-[#2A4669] md:h-full h-[100vh]  z-20 translate-x-[1px] md:flex md:relative fixed transition-all duration-300 ease-in-out delay-150">
+                        <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0  md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex  ri-home-3-line"></i>
-                            <a onclick="opentab()"  href="index.html" >Home</a>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  href="index.html" >Home</a>
                         </li>
-
     
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <!-- <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0   border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]" >
+                            <i class=" md:hidden flex  ri-information-line"></i>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  class="tabLinks " href="#aboutUs">About Us</a>
+                        </li> -->
+    
+                        <!-- <li class="flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0  md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-book-mark-line"></i>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"   href="#Courses">Courses</a>
+                        </li> -->
+    
+                        <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0 md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex ri-ball-pen-line"></i>
-                            <a onclick="opentab()"  href="registration.html">Registration</a>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  href="registration.html">Registration</a>
                         </li>
     
-                    
+                        <!-- <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white   md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                            <i class="md:hidden flex ri-phone-line"></i>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"   href="#contactUs">Contact Us</a>
+                        </li> -->
     
-                        <li class=" flex gap-3 items-center px-5 transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-b-[4px] md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
+                        <li class=" flex gap-3 items-center px-5 md:px-0 text-base transition-all duration-300 ease-in-out delay-300  md:py-0 py-[5%] hover:text-black md:hover:bg-inherit hover:bg-white  md:border-r-0 md:border-[#E9F1FF] md:hover:border-[#2A4669] border-r-[7px] border-[#2A4669] hover:border-black   md:block flex mb-[4%]">
                             <i class="md:hidden flex  ri-user-3-line"></i>
-                            <a onclick="opentab()"  href="sponsorship.html">Sponsorship</a>
+                            <a class="md:border-[#E9F1FF] md:border-b-[4px]" onclick="opentab()"  href="sponsorship.html">Sponsorship</a>
                         </li>
                     </ul>
                 </nav>
@@ -44,133 +59,170 @@
         </div>
     </div>
 
+    <div class="pt-20 w-[90%] mx-auto">
+        <h1 class="pt-[3%] text-[30px] text-center md:text-start text-center font-bold text-[#477FEA]   rounded-b-xl md:bg-inherit">REGISTRATION</h1>
+           
+        <form>
+           
+            <div class="grid grid-cols-2 mt-8  gap-x-20 gap-y-5">
+                <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Full Name</label>
+                    <input id="fullName" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Ajayi David">
+                </div>
+                <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Email</label>
+                    <input id="email" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="email" placeholder="Ajayi@gmail.com">
+                </div>
+                <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Phone Number</label>
+                    <input id="phoneNumber" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  type="number" placeholder="07039287546">
+                </div>
+    
+                <div data-aos="fade-up-left"  data-aos-duration="1000"  class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm"  for="">State of Origin</label>
+                    <input id="origin" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Oyo">
+                </div>
+    
+                <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm"  for="">Date of Birth</label>
+                    <input id="dob" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  type="date" placeholder="09-02-2002">
+                </div>
+    
+                <div data-aos="fade-up-left"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Place of birth</label>
+                    <input id="pob"  class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Ibadan">
+                </div>
+    
+                <div data-aos="fade-up-right"  data-aos-duration="1000"  class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Marital Status</label>
+                    <input id="maritalStatus"  class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Married">
+                </div>
+    
+                <div data-aos="fade-up-left"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Name of spouse (If married) </label>
+                    <input id="spouseName"  class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="Joy Ozas">
+                </div>
+    
+                <div data-aos="fade-up-right"  data-aos-duration="1000"  class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Phone Number of Spouse (If married)</label>
+                    <input id="spouseNumber"  class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="number" placeholder="09156789205">
+                </div>
+    
+                <div data-aos="fade-up-left"  data-aos-duration="1000"  class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Language spoken</label>
+                    <input id="langSpoken" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="English">
+                </div>
+    
+                <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Language Written</label>
+                    <input id="langWritten" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  type="text" placeholder="English">
+                </div>
+                
+                <div data-aos="fade-up-left"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Are you a member of new creation gospel mission?</label>
+                    <select  name="member" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" id="mem">
+                        <option >Select an option</option>
+                        <option value="no">NO</option>
+                        <option value="yes">YES</option>
+                    </select>
+                </div>
+    
+                <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Do you have any health issues?</label>
+                    <select  name="member" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" id="cond">
+                        <option >Select an option</option>
+                        <option value="no">NO</option>
+                        <option value="yes">YES</option>
+                    </select>
+                </div>
+    
+                <div data-aos="fade-up-left"  data-aos-duration="1000"  class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">If yes, please state your condition below</label>
+                    <input id="condtype" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium" type="text" placeholder="">
+                </div>
+    
+                <div data-aos="fade-up-right"  data-aos-duration="1000" class= "flex flex-col items-start md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md" >
+                    <label class="text-[#333333] md:text-[20px] md:my-[5px] inline-block font-semibold text-sm" for="">Brief testimony of how you became born again</label>
+                    <textarea id="testimony" class="w-[90%]  w-full p-[2%] mt-2 rounded-lg border-2 border-[#333333] border-opacity-30 hover:border font-medium"  name="" id="" cols="30" rows="7"></textarea>
+                </div>
+                <div class="flex  w-full mt-6 ">
+                    <label for="profile" class="flex flex-col w-full h-48 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50  hover:bg-gray-100 ">
+                        <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg aria-hidden="true" class="w-10 h-10 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                            <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                        </div>
+                        <input id="profile" type="file" class="hidden" />
+                    </label>
+                </div> 
+                <button  class="md:ml-0 md:mr-0 ml-[5%] mr-[5%]  w-[90%]  md:w-[100%] mb-[1000px] md:mb-[400px] py-[2%] rounded-lg text-center font-semibold text-[18px] text-white bg-[#009ADC] ">Register</button>              
+            </div>
+        </form>       
 
-    <div class="registration pt-[5%]  md:pl-[7%] md:pr-[7%] ">
+    </div>
+
+    <!-- check for -->
+
+    
+    <!-- <div class="registration pt-20">
         <h1 class="pt-[3%] text-[30px] md:text-start text-center font-bold text-[#477FEA]   rounded-b-xl md:bg-inherit">REGISTRATION</h1>
        <div class=" pb-[10%] ">
-        <form class=" md:pl-0 md:pr-0 pl-[7%] pr-[7%] font-semibold md:text-[20px] pt-[3%] grid md:grid-cols-2 gap-x-[8%] gap-y-[2%] md:gap-y-[3%] text-[#33333366]" action="registration">
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class= " md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Full Name</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Ajayi David">
-            </div>
+        <form class=" font-semibold md:text-[20px] pt-[3%] grid md:grid-cols-2 gap-x-[8%] gap-y-[2%] md:gap-y-[3%] text-[#33333366]" action="registration">
+            
 
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class= " md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Email</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="email" placeholder="ajayi@gmail.com">
-            </div>
-
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class= " md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Phone Number</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="number" placeholder="07039287546">
-            </div>
-
-            <div data-aos="fade-up-left"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">State of Origin</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Oyo">
-            </div>
-
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Date of Birth</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="date" placeholder="09-02-2002">
-            </div>
-
-            <div data-aos="fade-up-left"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Place of birth</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Ibadan">
-            </div>
-
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class= " md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Sex</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Male">
-            </div>
-
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-black" for="">Marital Status</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Married">
-            </div>
-
-            <div data-aos="fade-up-left"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Name of spouse (If married) </label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="Joy Ozas">
-            </div>
-
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Phone Number of Spouse (If married)</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="number" placeholder="09156789205">
-            </div>
-
-            <div data-aos="fade-up-left"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Language spoken</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="English">
-            </div>
-
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Language Written</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="English">
-            </div>
-
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">Do you have any health issues?</label>
-                <br>
-                <select class="mt-[2%] w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" name="member" id="">
-                    <option value="no">NO</option>
-                    <option value="yes">YES</option>
-                </select>
-            </div>
-
-            <div data-aos="fade-up-left"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-[#333333]" for="">If yes, please state your condition below</label>
-                <br>
-                <input class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" type="text" placeholder="">
-            </div>
-
-            <div data-aos="fade-up-right"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
-                <label class="text-black" for="">Brief testimony of how you became born again</label>
-                <textarea class="mt-[2%]  w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" name="" id="" cols="30" rows="7"></textarea>
-                <br>
-            </div>
-
+            
+            <div data-aos="fade-up-right"  data-aos-duration="1000" >
+                    <label class="text-[#333333]" for="">Sex</label>
+                    <br>
+                    <select  name="member" id="gender">
+                        <option >Select an option</option>
+                        <option value="male">MALE</option>
+                        <option value="female">FEMALE</option>
+                    </select>          
+                </div>
             <div class="flex   pt-[30px] ">
                 <label for="dropzone-file" class="flex flex-col justify-center items-center w-full h-60   bg-[#F86D6233]  bg-white rounded-lg border-2 border-gray-300 border-dashed cursor-pointer">
                     <div class="flex flex-col justify-center items-center pt-5 pb-6">
                         <p class="mb-2 text-md text-black dark:text-gray-400" >Drag and drop file here or <span class="font-semibold text-[#009ADC]">Browse</span></p>
                     </div>
-                    <input id="dropzone-file" type="file" class="hidden">
+                    <input  id="profile" type="file">
+                </label>
+            </div>
+            <div class="flex items-center justify-center w-full">
+                <label for="profile" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50  hover:bg-gray-100 ">
+                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                        <svg aria-hidden="true" class="w-10 h-10 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                    </div>
+                    <input id="profile" type="file" class="hidden" />
                 </label>
             </div> 
+             
             <div data-aos="fade-up-left"  data-aos-duration="1000" class="md:bg-inherit md:border-none md:shadow-none bg-white rounded-lg md:px-0 px-[5%] md:pb-0 pb-[5%] shadow-md">
                 <label class="text-[#333333]" for="">Are you a member of new creation gospel mission?</label>
                 <br>
-                <select class="mt-[2%] w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" name="member" id="">
+                <select class="mt-[2%] w-[90%]  w-full py-[2%] rounded-lg border-2 border-slate-400 pl-[2%]" name="member" id="mem">
+                    <option >Select an option</option>
                     <option value="yes">YES</option>
                     <option value="no">NO</option>
                 </select>
             </div>
             
             <br>
-            <button class="md:ml-0 md:mr-0 ml-[5%] mr-[5%]  w-[90%]  md:w-[100%] mb-[1000px] md:mb-[400px] py-[2%] rounded-lg text-center font-semibold text-[18px] text-white bg-[#009ADC] ">Register</button>
+            <button  class="md:ml-0 md:mr-0 ml-[5%] mr-[5%]  w-[90%]  md:w-[100%] mb-[1000px] md:mb-[400px] py-[2%] rounded-lg text-center font-semibold text-[18px] text-white bg-[#009ADC] ">Register</button>
 
         </form>
         
 
 
        </div>
-    </div>
+    </div> -->
     <script>
         AOS.init();
   </script>
   <script src="index.js"></script>
+  <script src="register.js"></script>
+
 </body>
 </html>
