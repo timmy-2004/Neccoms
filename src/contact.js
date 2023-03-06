@@ -12,7 +12,8 @@ form.addEventListener('submit', async event => {
  const email = document.querySelector('#email').value; 
  const message = document.querySelector('#message').value; 
 
- const msg = document.querySelector('#mess')
+ const msg1 = document.querySelector('#mess1')
+ const msg2 = document.querySelector('#mess2')
  
 
 
@@ -32,14 +33,17 @@ form.addEventListener('submit', async event => {
     })
     // console.log(body)
     .then(response => {
-      alert("You have been reistered successfully")
-      msg.innerHTML = "message sent successfully"
+      alert("You have been registered successfully")
+      msg1.innerHTML = "message sent successfully"
      setTimeout(function(){
-      msg.innerHTMl = ""
+      msg1.innerHTMl = ""
      },5000)
      form.reset()
   })
-  .catch(error => console.error('Error!', error.message))
+  .catch(error => console.error(
+    alert("You have been registered successfully")
+
+  , error.message))
    
   }
   
